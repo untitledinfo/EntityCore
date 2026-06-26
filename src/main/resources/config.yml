@@ -1,0 +1,22 @@
+storage:
+  type: yaml
+  file: npcs.yml
+
+rendering:
+  view-distance: 48
+  packet-based: true
+  auto-respawn: true
+
+skins:
+  cache-minutes: 1440
+  async-loading: true
+  provider-order:
+    - mojang
+    - elyby
+    - offline
+
+holograms:
+  line-spacing: 0.28
+  placeholders: true
+
+debug: false

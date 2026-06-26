@@ -1,0 +1,64 @@
+name: EntityCore
+version: ${project.version}
+main: firepdx.pgc.net.EntityCore
+api-version: '1.20'
+author: FirePDX
+description: Ultimate cross-platform NPC plugin foundation.
+folia-supported: true
+softdepend:
+  - PlaceholderAPI
+  - LuckPerms
+  - Vault
+  - ProtocolLib
+  - WorldGuard
+  - WorldEdit
+  - Multiverse-Core
+  - Citizens
+commands:
+  npc:
+    description: Manage EntityCore NPCs.
+    usage: /npc help
+    permission: entitycore.npc
+permissions:
+  entitycore.*:
+    description: Grants every EntityCore permission.
+    default: op
+    children:
+      entitycore.admin: true
+  entitycore.admin:
+    description: Grants administrative EntityCore access.
+    default: op
+    children:
+      entitycore.npc: true
+      entitycore.create: true
+      entitycore.delete: true
+      entitycore.edit: true
+      entitycore.skin: true
+      entitycore.hologram: true
+      entitycore.gui: true
+      entitycore.ai: true
+      entitycore.command: true
+      entitycore.reload: true
+      entitycore.debug: true
+  entitycore.npc:
+    default: op
+  entitycore.create:
+    default: op
+  entitycore.delete:
+    default: op
+  entitycore.edit:
+    default: op
+  entitycore.skin:
+    default: op
+  entitycore.hologram:
+    default: op
+  entitycore.gui:
+    default: op
+  entitycore.ai:
+    default: op
+  entitycore.command:
+    default: op
+  entitycore.reload:
+    default: op
+  entitycore.debug:
+    default: op
